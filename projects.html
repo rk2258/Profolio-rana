@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Rana's Python projects, including a calculator, shopping cart, game, and weather data logger.">
+    <title>Projects | Rana</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Rana, home">rana<span>.</span></a>
+        <div class="navigation-controls">
+          <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light mode">Light mode</button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+            <span class="sr-only">Open navigation</span>
+            <span class="menu-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a class="nav-contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero page-hero container" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">02 / Things I’ve made</p>
+          <h1 id="page-title">My projects<span>.</span></h1>
+          <p class="hero-description">Each project has helped me practice something new and learn more about programming.</p>
+        </div>
+      </section>
+      <section class="section projects-section" aria-label="Project cards">
+        <div class="container">
+          <div class="project-grid">
+            <article class="project-card">
+              <svg class="project-art" viewBox="0 0 320 120" role="img" aria-label="Illustration of a simple calculator with number buttons">
+                <rect x="113" y="12" width="94" height="96" rx="10" fill="currentColor" opacity=".12"/>
+                <rect x="126" y="23" width="68" height="22" rx="4" fill="currentColor" opacity=".3"/>
+                <g fill="currentColor">
+                  <circle cx="135" cy="61" r="6"/><circle cx="160" cy="61" r="6"/><circle cx="185" cy="61" r="6"/>
+                  <circle cx="135" cy="83" r="6"/><circle cx="160" cy="83" r="6"/><circle cx="185" cy="83" r="6"/>
+                </g>
+                <path d="M75 60h25m-12-12 12 12-12 12m145 0h25m-12-12 12 12-12 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="project-number">01</span>
+              <h2>Python Calculator</h2>
+              <p>
+                I created a Python calculator that adds, subtracts, multiplies,
+                and divides two numbers. It helped me practice functions,
+                conditional statements, and user input. It was one of my first
+                programming projects.
+              </p>
+              <ul class="tag-list" aria-label="Technologies"><li>Python</li></ul>
+              <section class="calculator-demo" aria-labelledby="calculator-title">
+                <h3 id="calculator-title">Interactive Calculator Demo</h3>
+                <p class="calculator-note">Try the web version of my calculator.</p>
+                <div class="calculator" data-calculator>
+                  <output
+                    class="calculator-display"
+                    data-calculator-display
+                    aria-label="Calculator display"
+                    aria-live="polite"
+                    aria-atomic="true"
+                  >0</output>
+                  <div class="calculator-keys" aria-label="Calculator keys">
+                    <button class="calculator-key calculator-key-utility" type="button" data-calculator-key="clear" aria-label="Clear">C</button>
+                    <button class="calculator-key calculator-key-utility" type="button" data-calculator-key="backspace" aria-label="Backspace">⌫</button>
+                    <button class="calculator-key calculator-key-operator" type="button" data-calculator-key="/" aria-label="Divide">÷</button>
+                    <button class="calculator-key calculator-key-operator" type="button" data-calculator-key="*" aria-label="Multiply">×</button>
+                    <button class="calculator-key" type="button" data-calculator-key="7">7</button>
+                    <button class="calculator-key" type="button" data-calculator-key="8">8</button>
+                    <button class="calculator-key" type="button" data-calculator-key="9">9</button>
+                    <button class="calculator-key calculator-key-operator" type="button" data-calculator-key="-">−</button>
+                    <button class="calculator-key" type="button" data-calculator-key="4">4</button>
+                    <button class="calculator-key" type="button" data-calculator-key="5">5</button>
+                    <button class="calculator-key" type="button" data-calculator-key="6">6</button>
+                    <button class="calculator-key calculator-key-operator" type="button" data-calculator-key="+">+</button>
+                    <button class="calculator-key" type="button" data-calculator-key="1">1</button>
+                    <button class="calculator-key" type="button" data-calculator-key="2">2</button>
+                    <button class="calculator-key" type="button" data-calculator-key="3">3</button>
+                    <button class="calculator-key calculator-key-equals" type="button" data-calculator-key="=" aria-label="Equals">=</button>
+                    <button class="calculator-key calculator-key-zero" type="button" data-calculator-key="0">0</button>
+                    <button class="calculator-key" type="button" data-calculator-key=".">.</button>
+                  </div>
+                </div>
+              </section>
+            </article>
+            <article class="project-card">
+              <svg class="project-art" viewBox="0 0 320 120" role="img" aria-label="Illustration of a shopping basket with items and a total">
+                <path d="m105 41 13 54h84l13-54z" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                <path d="m131 41 13 54m45-54-13 54m-37-54-9-17m47 17 9-17" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="135" cy="107" r="5" fill="currentColor"/><circle cx="185" cy="107" r="5" fill="currentColor"/>
+                <path d="M75 66h18m134 0h18m-18-15h18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="228" cy="51" r="13" fill="currentColor" opacity=".2"/><path d="M228 44v14m-5-7h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span class="project-number">02</span>
+              <h2>Shopping Cart</h2>
+              <p>
+                I created a shopping cart program in Python. Users can add or
+                remove items and check the total price. I used dictionaries,
+                loops, and conditional statements to organize the cart.
+              </p>
+              <ul class="tag-list" aria-label="Technologies"><li>Python</li></ul>
+              <section class="shopping-demo" aria-labelledby="shopping-demo-title" data-shopping-cart>
+                <h3 id="shopping-demo-title">Interactive Shopping Cart Demo</h3>
+                <p class="shopping-note">Add a few sample items and try out the cart.</p>
+                <ul class="product-list" aria-label="Available products">
+                  <li class="product-item">
+                    <span><strong>T-Shirt</strong><span class="product-price">$15.00</span></span>
+                    <button class="cart-button" type="button" data-add-product="tshirt">Add to Cart</button>
+                  </li>
+                  <li class="product-item">
+                    <span><strong>Shoes</strong><span class="product-price">$50.00</span></span>
+                    <button class="cart-button" type="button" data-add-product="shoes">Add to Cart</button>
+                  </li>
+                  <li class="product-item">
+                    <span><strong>Backpack</strong><span class="product-price">$30.00</span></span>
+                    <button class="cart-button" type="button" data-add-product="backpack">Add to Cart</button>
+                  </li>
+                  <li class="product-item">
+                    <span><strong>Hat</strong><span class="product-price">$10.00</span></span>
+                    <button class="cart-button" type="button" data-add-product="hat">Add to Cart</button>
+                  </li>
+                </ul>
+                <div class="cart-panel">
+                  <div class="cart-heading">
+                    <h4>Your Cart</h4>
+                    <button class="cart-clear-button" type="button" data-clear-cart disabled>Clear Cart</button>
+                  </div>
+                  <p class="cart-empty" data-cart-empty>Your cart is empty.</p>
+                  <ul class="cart-items" aria-label="Items in your cart" data-cart-items aria-live="polite"></ul>
+                  <p class="cart-total" data-cart-total aria-live="polite">Total: $0.00</p>
+                </div>
+              </section>
+            </article>
+            <article class="project-card">
+              <svg class="project-art" viewBox="0 0 320 120" role="img" aria-label="Illustration of rock, paper, and scissors game choices">
+                <circle cx="104" cy="60" r="27" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="3"/>
+                <path d="M94 61q10-14 20 0v9q-10 10-20 0z" fill="currentColor" opacity=".72"/>
+                <rect x="142" y="37" width="42" height="48" rx="5" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="3"/>
+                <path d="M150 49h26m-26 9h26m-26 9h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="m211 42 17 16m0-16-17 16m5-7-10 22m13-22 10 22" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <path d="M78 103h165" stroke="currentColor" stroke-width="2" opacity=".4"/>
+              </svg>
+              <span class="project-number">03</span>
+              <h2>Rock Paper Scissors</h2>
+              <p>
+                I made a Rock Paper Scissors game in Python for two players.
+                The program checks both choices and announces the winner or a
+                tie. This project gave me practice with conditionals and game logic.
+              </p>
+              <ul class="tag-list" aria-label="Technologies"><li>Python</li></ul>
+              <section class="rps-demo" aria-labelledby="rps-demo-title" data-rps-game>
+                <h3 id="rps-demo-title">Interactive Rock Paper Scissors Demo</h3>
+                <p class="rps-note">Choose a move and see if you can beat the computer.</p>
+                <div class="rps-choices" role="group" aria-label="Choose rock, paper, or scissors">
+                  <button class="rps-choice" type="button" data-rps-choice="rock"><span aria-hidden="true">✊</span> Rock</button>
+                  <button class="rps-choice" type="button" data-rps-choice="paper"><span aria-hidden="true">✋</span> Paper</button>
+                  <button class="rps-choice" type="button" data-rps-choice="scissors"><span aria-hidden="true">✌️</span> Scissors</button>
+                </div>
+                <div class="rps-round" aria-live="polite" aria-atomic="true">
+                  <p class="rps-picks" data-rps-picks>Pick a move to start!</p>
+                  <p class="rps-result" data-rps-result>Ready when you are.</p>
+                </div>
+                <div class="rps-scoreboard" aria-label="Game score">
+                  <p>Player Wins <strong data-rps-player-score>0</strong></p>
+                  <p>Computer Wins <strong data-rps-computer-score>0</strong></p>
+                  <p>Ties <strong data-rps-ties>0</strong></p>
+                </div>
+                <button class="rps-reset" type="button" data-rps-reset>Reset Game</button>
+              </section>
+            </article>
+            <article class="project-card">
+              <svg class="project-art" viewBox="0 0 320 120" role="img" aria-label="Illustration of a sun, cloud, and weather data record">
+                <circle cx="112" cy="48" r="17" fill="currentColor" opacity=".2" stroke="currentColor" stroke-width="3"/>
+                <path d="M112 20v-8m0 72v-8m-28-28h-8m72 0h-8m-48-20-6-6m51 51-6-6m0-39 6-6m-51 51 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M99 77a16 16 0 0 1 4-32 22 22 0 0 1 42 7 14 14 0 0 1 0 28z" fill="var(--card)" stroke="currentColor" stroke-width="3"/>
+                <rect x="183" y="27" width="47" height="62" rx="5" fill="currentColor" opacity=".12" stroke="currentColor" stroke-width="3"/>
+                <path d="M193 43h27m-27 12h27m-27 12h18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              <span class="project-number">04</span>
+              <h2>Weather Data Logger</h2>
+              <p>
+                I built a Python program that gets weather information for a
+                city using an API. It displays the temperature, humidity, and
+                conditions, then saves the results in a text file. I learned
+                about APIs and working with data.
+              </p>
+              <ul class="tag-list" aria-label="Technologies"><li>Python</li><li>API</li><li>Text files</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a class="brand" href="index.html">rana<span>.</span></a>
+        <p>Made with curiosity <span aria-hidden="true">✳</span></p>
+        <a href="index.html">Back to home ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
